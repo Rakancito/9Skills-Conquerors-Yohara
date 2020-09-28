@@ -1,4 +1,18 @@
 //Search
+
+bool CHARACTER::Damage(LPCHARACTER pAttacker, int dam, EDamageType type) 
+{
+	
+//add after
+#ifdef ENABLE_CONQUEROR_LEVEL	
+	if(IsAffectFlag(AFF_CHUNWOON_MOOJUK))
+	{
+		SendDamagePacket(pAttacker, 0, DAMAGE_BLOCK);
+		return false;
+	}
+#endif	
+
+//Search
 				case SKILL_HWAJO:
 					{
 						int iUseArrow = 1;
