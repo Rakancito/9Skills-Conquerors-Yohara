@@ -1,0 +1,72 @@
+ScriptType               MotionData
+
+MotionFileName           "D:\Ymir Work\monster2\east_earth_king\normal_attack1.GR2"
+MotionDuration           0.800000
+
+
+Group MotionEventData
+{
+    MotionEventDataCount     4
+    Group Event00
+    {
+        MotionEventType      4
+        StartingTime         0.268613
+        DuringTime           0.200000
+        EnableHitProcess     0
+        
+        AttackType           0
+        HittingType          2
+        StiffenTime          0.000000
+        InvisibleTime        0.300000
+        ExternalForce        0.000000
+        HitLimitCount        0
+        CollisionType        4
+        
+        SphereDataCount      1
+        Group SphereData00
+        {
+            Radius           100.000000
+            Position         -50.000000 -200.000000 0.000000
+        }
+    }
+    Group Event01
+    {
+        MotionEventType      4
+        StartingTime         0.457421
+        DuringTime           0.200000
+        EnableHitProcess     0
+        
+        AttackType           0
+        HittingType          2
+        StiffenTime          0.000000
+        InvisibleTime        0.300000
+        ExternalForce        0.000000
+        HitLimitCount        0
+        CollisionType        4
+        
+        SphereDataCount      1
+        Group SphereData00
+        {
+            Radius           100.000000
+            Position         20.000000 -200.000000 0.000000
+        }
+    }
+    Group Event02
+    {
+        MotionEventType      2
+        StartingTime         0.260827
+        
+        DuringTime           0.200000
+        Power                150
+        AffectingRange       150
+    }
+    Group Event03
+    {
+        MotionEventType      2
+        StartingTime         0.451582
+        
+        DuringTime           0.200000
+        Power                150
+        AffectingRange       150
+    }
+}

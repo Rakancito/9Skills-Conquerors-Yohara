@@ -1,0 +1,41 @@
+ScriptType               MotionData
+
+MotionFileName           "D:\Ymir Work\monster2\east_earth_magic\special_attack1.GR2"
+MotionDuration           2.066667
+Accumulation           0.00	-400.00	0.00
+
+Group MotionEventData
+{
+    MotionEventDataCount     3
+    Group Event00
+    {
+        MotionEventType      2
+        StartingTime         1.106245
+        
+        DuringTime           0.200000
+        Power                200
+        AffectingRange       200
+    }
+    Group Event01
+    {
+        MotionEventType      6
+        StartingTime         1.086131
+        
+        AttachingEnable      0
+        AttachingBoneName    "Bip01 R Finger42"
+        FlyFileName       "d:/ymir work/effect/monster2/earth_magic_s1_throw.msf"
+        FlyPosition       0.000000 -250.000000 150.000000
+    }
+    Group Event02
+    {
+        MotionEventType      1
+        StartingTime         0.030170
+        
+        IndependentFlag      0
+        AttachingEnable      1
+        AttachingBoneName    "wstf100"
+        FollowingEnable      1
+        EffectFileName       "d:/ymir work/effect/monster2/earth_magic_s1_fire.mse"
+        EffectPosition       0.000000 0.000000 0.000000
+    }
+}

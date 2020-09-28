@@ -1,0 +1,70 @@
+ScriptType            RaceDataScript
+
+BaseModelFileName     "D:\Ymir Work\npc2\garrison\garrison.GR2"
+
+Group ShapeData
+{
+	PathName		""
+	ShapeDataCount	1
+
+	Group ShapeData00
+	{
+		ShapeIndex	0
+		Model		"D:\Ymir Work\npc2\garrison\garrison.GR2"
+		SourceSkin	"D:\Ymir Work\npc2\garrison\garrison.dds"
+		TargetSkin	"D:\Ymir Work\npc2\garrison\garrison_3.dds"
+	}
+}
+Group AttachingData
+{
+    AttachingDataCount       3
+    
+    Group AttachingData00
+    {
+        AttachingDataType    1
+        
+        isAttaching          1
+        AttachingModelIndex  0
+        AttachingBoneName    "root"
+        
+        CollisionType        3
+        
+        SphereDataCount      1
+        Group SphereData00
+        {
+            Radius           230.000000
+            Position         0.000000 0.000000 30.000000
+        }
+    }
+    
+    Group AttachingData01
+    {
+        AttachingDataType    1
+        
+        isAttaching          1
+        AttachingModelIndex  0
+        AttachingBoneName    "root"
+        
+        CollisionType        1
+        
+        SphereDataCount      1
+        Group SphereData00
+        {
+            Radius           216.000000
+            Position         0.000000 0.000000 30.000000
+        }
+    }
+    
+    Group AttachingData02
+    {
+        AttachingDataType    2
+        
+        isAttaching          1
+        AttachingModelIndex  0
+        AttachingBoneName    "eff"
+        
+        EffectScriptName     "D:\Ymir Work\effect\npc2\garrison_2.mse"
+        EffectPosition       0.000000 0.000000 0.000000
+        EffectRotation       0.000000 0.000000 0.000000
+    }
+}

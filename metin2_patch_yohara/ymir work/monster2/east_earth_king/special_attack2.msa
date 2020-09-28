@@ -1,0 +1,64 @@
+ScriptType               MotionData
+
+MotionFileName           "D:\Ymir Work\monster2\east_earth_king\special_attack2.GR2"
+MotionDuration           1.833333
+
+Group MotionEventData
+{
+    MotionEventDataCount     4
+    Group Event00
+    {
+        MotionEventType      4
+        StartingTime         1.475263
+        DuringTime           0.200000
+        EnableHitProcess     1
+        
+        AttackType           0
+        HittingType          1
+        StiffenTime          0.000000
+        InvisibleTime        0.300000
+        ExternalForce        0.000000
+        HitLimitCount        0
+        CollisionType        4
+        
+        SphereDataCount      1
+        Group SphereData00
+        {
+            Radius           200.000000
+            Position         -20.000000 -200.000000 0.000000
+        }
+    }
+    Group Event01
+    {
+        MotionEventType      2
+        StartingTime         1.453365
+        
+        DuringTime           0.200000
+        Power                200
+        AffectingRange       200
+    }
+    Group Event02
+    {
+        MotionEventType      1
+        StartingTime         0.116788
+        
+        IndependentFlag      0
+        AttachingEnable      1
+        AttachingBoneName    "Bip01 R Finger2"
+        FollowingEnable      1
+        EffectFileName       "d:/ymir work/effect/monster2/earth_king_s2_making.mse"
+        EffectPosition       0.000000 0.000000 0.000000
+    }
+    Group Event03
+    {
+        MotionEventType      1
+        StartingTime         1.409570
+        
+        IndependentFlag      0
+        AttachingEnable      0
+        AttachingBoneName    "Bip01 R Finger2"
+        FollowingEnable      0
+        EffectFileName       "d:/ymir work/effect/monster2/earth_king_s1_blow.mse"
+        EffectPosition       0.000000 -100.000000 0.000000
+    }
+}

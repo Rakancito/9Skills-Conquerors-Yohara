@@ -1,0 +1,33 @@
+ScriptType               MotionData
+
+MotionFileName           "D:\Ymir Work\pc2\shaman\skill\chunwoon.GR2"
+MotionDuration           1.833333
+
+Group MotionEventData
+{
+    MotionEventDataCount     2
+    Group Event00
+    {
+        MotionEventType      1
+        StartingTime         0.120438
+        
+        IndependentFlag      0
+        AttachingEnable      0
+        AttachingBoneName    "equip_left"
+        FollowingEnable      0
+        EffectFileName       "d:/ymir work/pc/shaman/effect/chunwoon_3_making.mse"
+        EffectPosition       0.000000 0.000000 130.000000
+    }
+    Group Event01
+    {
+        MotionEventType      1
+        StartingTime         0.990268
+        
+        IndependentFlag      0
+        AttachingEnable      0
+        AttachingBoneName    "equip_left"
+        FollowingEnable      0
+        EffectFileName       "d:/ymir work/pc/shaman/effect/chunwoon_3_blow.mse"
+        EffectPosition       0.000000 -20.000000 130.000000
+    }
+}

@@ -1,0 +1,31 @@
+ScriptType               MotionData
+
+MotionFileName           "D:\Ymir Work\monster2\east_earth_soldier2\normal_attack2.GR2"
+MotionDuration           0.933333
+
+Group MotionEventData
+{
+    MotionEventDataCount     1
+    Group Event00
+    {
+        MotionEventType      4
+        StartingTime         0.389294
+        DuringTime           0.200000
+        EnableHitProcess     0
+        
+        AttackType           0
+        HittingType          2
+        StiffenTime          0.000000
+        InvisibleTime        0.300000
+        ExternalForce        0.000000
+        HitLimitCount        0
+        CollisionType        4
+        
+        SphereDataCount      1
+        Group SphereData00
+        {
+            Radius           60.000000
+            Position         70.000000 -220.000000 20.000000
+        }
+    }
+}

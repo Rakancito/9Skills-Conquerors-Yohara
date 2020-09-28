@@ -1,0 +1,63 @@
+SpreadingFlag           0
+MaintainParallelFlag    0
+InitialVelocity         700.000000
+ConeAngle               0.000000
+RollAngle               90.000000
+AngularVelocity         0.000000 0.000000 0.000000
+Gravity                 0.000000
+HitOnBackground         0
+HitOnAnotherMonster     0
+PierceCount             0
+CollisionSphereRadius   0.000000
+BombRange               10.000000
+BombEffect              "d:/ymir work/pc/assassin/effect/yeonsa_4_blow.mse"
+HomingFlag              1
+HomingStartTime         0.000000
+HomingMaxAngle          180.000000
+Range                   50000.000000
+Acceleration            0.000000 -2000.000000 0.000000
+Group AttachData
+{
+    Type          1
+    FlyType       3
+    AttachFile    ""
+    TailFlag      1
+    TailColor     4282738221d
+    TailLength    0.100000
+    TailSize      3.000000
+    TailShapeRect 0
+    Roll          90.000000
+    Distance      0.000000
+    Period        0.500000
+    Amplitude     80.000000
+}
+Group AttachData
+{
+    Type          1
+    FlyType       3
+    AttachFile    ""
+    TailFlag      1
+    TailColor     4282279469d
+    TailLength    0.100000
+    TailSize      3.000000
+    TailShapeRect 0
+    Roll          270.000000
+    Distance      0.000000
+    Period        0.500000
+    Amplitude     90.000000
+}
+Group AttachData
+{
+    Type          1
+    FlyType       3
+    AttachFile    "akgi_dark_2_throw.mse"
+    TailFlag      1
+    TailColor     983558036d
+    TailLength    0.300000
+    TailSize      10.000000
+    TailShapeRect 0
+    Roll          -50.000000
+    Distance      0.000000
+    Period        0.800000
+    Amplitude     50.000000
+}

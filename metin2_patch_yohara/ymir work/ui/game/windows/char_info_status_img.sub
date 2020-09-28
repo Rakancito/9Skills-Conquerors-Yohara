@@ -1,0 +1,7 @@
+title subImage
+version 1.0
+image "windows.dds"
+left 8
+top 380
+right 44
+bottom 393

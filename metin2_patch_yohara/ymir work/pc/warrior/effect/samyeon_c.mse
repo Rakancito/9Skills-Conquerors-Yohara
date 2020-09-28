@@ -1,0 +1,18 @@
+BoundingSphereRadius   0.000000
+BoundingSpherePosition 0.000000 0.000000 0.000000
+
+Group Mesh
+{
+    StartTime           0.000000
+    List TimeEventPosition
+    {
+        0.000000 "MOVING_TYPE_DIRECT" 0.000000 0.000000 0.000000
+    }
+    
+    MeshFileName               	"samyeon.mde"
+    MeshAnimationLoopEnable    	0
+    MeshAnimationLoopCount     	0
+    MeshAnimationFrameDelay    	0.020000
+    
+    MeshElementCount           	0
+}

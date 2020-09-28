@@ -1,0 +1,44 @@
+ScriptType               MotionData
+
+MotionFileName           "D:\Ymir Work\pc2\sura\skill\akgi_dark.GR2"
+MotionDuration           1.500000
+Accumulation           0.00	0.00	0.00
+
+Group MotionEventData
+{
+    MotionEventDataCount     3
+    Group Event00
+    {
+        MotionEventType      1
+        StartingTime         0.043796
+        
+        IndependentFlag      0
+        AttachingEnable      1
+        AttachingBoneName    "Bip01 L Hand"
+        FollowingEnable      1
+        EffectFileName       "d:/ymir work/pc/sura/effect/akgi_dark_1_making.mse"
+        EffectPosition       0.000000 0.000000 50.000000
+    }
+    Group Event01
+    {
+        MotionEventType      6
+        StartingTime         0.959854
+        
+        AttachingEnable      1
+        AttachingBoneName    "Bip01 L Hand"
+        FlyFileName       "d:/ymir work/pc/sura/effect/akgi_dark_1_throw.msf"
+        FlyPosition       0.000000 0.000000 0.000000
+    }
+    Group Event02
+    {
+        MotionEventType      1
+        StartingTime         0.941606
+        
+        IndependentFlag      0
+        AttachingEnable      0
+        AttachingBoneName    "Bip01 L Finger02"
+        FollowingEnable      0
+        EffectFileName       "d:/ymir work/pc/sura/effect/akgi_dark_1_fear.mse"
+        EffectPosition       0.000000 -150.000000 0.000000
+    }
+}

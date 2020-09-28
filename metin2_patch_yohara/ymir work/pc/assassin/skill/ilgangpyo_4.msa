@@ -1,0 +1,81 @@
+ScriptType               MotionData
+
+MotionFileName           "D:\Ymir Work\pc\assassin\skill\ilgangpyo.GR2"
+MotionDuration           0.800000
+
+Group MotionEventData
+{
+    MotionEventDataCount     7
+    Group Event00
+    {
+        MotionEventType      6
+        StartingTime         0.404866
+        
+        AttachingEnable      0
+        AttachingBoneName    "equip_left"
+        FlyFileName       "d:/ymir work/pc/assassin/effect/ilgangpyo_4.msf"
+        FlyPosition       -85.000000 65.000000 88.000000
+    }
+    Group Event01
+    {
+        MotionEventType      1
+        StartingTime         0.399027
+        
+        IndependentFlag      0
+        AttachingEnable      0
+        AttachingBoneName    "equip_left"
+        FollowingEnable      0
+        EffectFileName       "d:/ymir work/pc/assassin/effect/ilgangpyo_end.mse"
+        EffectPosition       0.000000 0.000000 0.000000
+    }
+    Group Event02
+    {
+        MotionEventType      6
+        StartingTime         0.461314
+        
+        AttachingEnable      0
+        AttachingBoneName    "Bip01 L Finger02"
+        FlyFileName       "d:/ymir work/pc/assassin/effect/ilgangpyo_4_1.msf"
+        FlyPosition       50.000000 95.000000 105.000000
+    }
+    Group Event03
+    {
+        MotionEventType      6
+        StartingTime         0.515815
+        
+        AttachingEnable      0
+        AttachingBoneName    "Bip01 L Finger02"
+        FlyFileName       "d:/ymir work/pc/assassin/effect/ilgangpyo_4.msf"
+        FlyPosition       -35.000000 60.000000 78.000000
+    }
+    Group Event04
+    {
+        MotionEventType      6
+        StartingTime         0.572263
+        
+        AttachingEnable      0
+        AttachingBoneName    "Bip01 L Finger02"
+        FlyFileName       "d:/ymir work/pc/assassin/effect/ilgangpyo_4.msf"
+        FlyPosition       73.000000 67.000000 87.000000
+    }
+    Group Event05
+    {
+        MotionEventType      6
+        StartingTime         0.618978
+        
+        AttachingEnable      0
+        AttachingBoneName    "Bip01 L Finger02"
+        FlyFileName       "d:/ymir work/pc/assassin/effect/ilgangpyo_4_1.msf"
+        FlyPosition       -50.000000 100.000000 95.000000
+    }
+    Group Event06
+    {
+        MotionEventType      6
+        StartingTime         0.667640
+        
+        AttachingEnable      0
+        AttachingBoneName    "Bip01 L Finger02"
+        FlyFileName       "d:/ymir work/pc/assassin/effect/ilgangpyo_4.msf"
+        FlyPosition       30.000000 50.000000 82.000000
+    }
+}
