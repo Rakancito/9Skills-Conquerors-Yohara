@@ -1,3 +1,45 @@
+//Search in bool CHARACTER::LearnSkillByBook(DWORD dwSkillVnum, BYTE bProb)
+
+if (GetSkillMasterType(dwSkillVnum) != SKILL_MASTER)
+	
+//Before add
+	
+
+#ifdef ENABLE_CONQUEROR_LEVEL
+#ifdef ENABLE_WOLFMAN_CHARACTER
+		if (GetSkillMasterType(dwSkillVnum) != SKILL_MASTER && (dwSkillVnum >= SKILL_FINISH && dwSkillVnum <= SKILL_ILIPUNGU))
+#else
+		if (GetSkillMasterType(dwSkillVnum) != SKILL_MASTER && (dwSkillVnum >= SKILL_FINISH && dwSkillVnum <= SKILL_CHEONUN))
+#endif
+		{
+			if (GetSkillMasterType(dwSkillVnum) > SKILL_MASTER)
+			{
+				ChatPacket(CHAT_TYPE_INFO, LC_TEXT(TRANSLATE_LANGUAGE, "ÀÌ ½ºÅ³Àº Ã¥À¸·Î ´õÀÌ»ó ¼ö·ÃÇÒ ¼ö ¾ø½À´Ï´Ù."));
+				return false;
+			}
+		}
+		else
+#endif
+
+//Search in void CHARACTER::SkillLevelUp(DWORD dwVnum, BYTE bMethod)
+			
+			if (GetSkillMasterType(pkSk->dwVnum) != SKILL_MASTER)
+				return;
+// Replace with
+
+#ifdef ENABLE_CONQUEROR_LEVEL
+#ifdef ENABLE_WOLFMAN_CHARACTER
+			if (GetSkillMasterType(pkSk->dwVnum) != SKILL_MASTER && (pkSk->dwVnum<= SKILL_FINISH | pkSk->dwVnum>= SKILL_ILIPUNGU))
+#else
+			if (GetSkillMasterType(pkSk->dwVnum) != SKILL_MASTER && (pkSk->dwVnum<= SKILL_FINISH | pkSk->dwVnum>= SKILL_ILIPUNGU))
+#endif
+#else
+			if (GetSkillMasterType(pkSk->dwVnum) != SKILL_MASTER)
+#endif
+				return;
+
+//add after
+
 //Search
 	if (dwVnum == SKILL_CHAIN)
 	{
@@ -135,7 +177,7 @@ void CHARACTER::StopCheonunEvent()
 
 //Replace with
 
-		// ������
+		// ¿©À¯ºÐ
 #ifdef ENABLE_CONQUEROR_LEVEL
 		{   5,		176,			177,			179,			181,	183		}, //  34
 #else
