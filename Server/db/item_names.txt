@@ -1,0 +1,8 @@
+50569	Terremoto (9.ª h.)
+50570	Estrellas luz (9.ª h.)
+50571	Tiro tempestad (9.ª h.)
+50572	Golpe infernal (9.ª h.)
+50573	Onda letal (9.ª h.)
+50574	Meteoro (9.ª h.)
+50575	Escudo etéreo (9.ª h.)
+50576	Golpe de garra (9.ª h.)
