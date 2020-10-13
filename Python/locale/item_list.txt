@@ -1,0 +1,8 @@
+50569	ETC	icon/item/50569.tga
+50570	ETC	icon/item/50569.tga
+50571	ETC	icon/item/50569.tga
+50572	ETC	icon/item/50569.tga
+50573	ETC	icon/item/50569.tga
+50574	ETC	icon/item/50569.tga
+50575	ETC	icon/item/50569.tga
+50576	ETC	icon/item/50569.tga
