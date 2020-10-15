@@ -1,15 +1,52 @@
 #Search
 
+if localeInfo.IsYMIR():
+	SHOW_LIMIT_SUPPORT_SKILL_LIST = [121, 122, 123, 124, 126, 127, 129, 128, 131, 137, 138, 139, 140,141,142]
+	[121, 122, 123, 124, 126, 127, 129, 128, 131, 137, 138, 139, 140, 0, 0, 0, 0]
+	if not localeInfo.IsCHEONMA():
+		HIDE_SUPPORT_SKILL_POINT = TRUE 
+		SHOW_LIMIT_SUPPORT_SKILL_LIST = [121, 122, 123, 124, 126, 127, 129, 128, 131, 137, 138, 139, 140,141,142]
+elif localeInfo.IsJAPAN() or   (localeInfo.IsEUROPE() and app.GetLocalePath() != "locale/ca") and (localeInfo.IsEUROPE() and app.GetLocalePath() != "locale/br"):
+	HIDE_SUPPORT_SKILL_POINT = TRUE	
+	SHOW_LIMIT_SUPPORT_SKILL_LIST = [121, 122, 123, 124, 126, 127, 129, 128, 131, 137, 138, 139, 140]
+
+else:
+	HIDE_SUPPORT_SKILL_POINT = TRUE
+	
+#Replace with 
+
+if app.ENABLE_CONQUEROR_LEVEL:
+	HIDE_SUPPORT_SKILL_POINT = TRUE
+	SHOW_LIMIT_SUPPORT_SKILL_LIST = [121, 122, 123, 124, 126, 127, 129, 128, 131, 137, 138, 139, 140, 132, 133, 134, 246]
+else:
+	if localeInfo.IsYMIR():
+		SHOW_LIMIT_SUPPORT_SKILL_LIST = [121, 122, 123, 124, 126, 127, 129, 128, 131, 137, 138, 139, 140,141,142]
+		[121, 122, 123, 124, 126, 127, 129, 128, 131, 137, 138, 139, 140, 0, 0, 0, 0]
+		if not localeInfo.IsCHEONMA():
+			HIDE_SUPPORT_SKILL_POINT = TRUE 
+			SHOW_LIMIT_SUPPORT_SKILL_LIST = [121, 122, 123, 124, 126, 127, 129, 128, 131, 137, 138, 139, 140,141,142]
+	elif localeInfo.IsJAPAN() or   (localeInfo.IsEUROPE() and app.GetLocalePath() != "locale/ca") and (localeInfo.IsEUROPE() and app.GetLocalePath() != "locale/br"):
+		HIDE_SUPPORT_SKILL_POINT = TRUE	
+		SHOW_LIMIT_SUPPORT_SKILL_LIST = [121, 122, 123, 124, 126, 127, 129, 128, 131, 137, 138, 139, 140]
+
+	else:
+		HIDE_SUPPORT_SKILL_POINT = TRUE
+
+#Search
+
 class CharacterWindow(ui.ScriptWindow):
 	ACTIVE_PAGE_SLOT_COUNT = 8
+	SUPPORT_PAGE_SLOT_COUNT = 12	
 	
 #Replace with
 
 class CharacterWindow(ui.ScriptWindow):
 	if app.ENABLE_CONQUEROR_LEVEL:
 		ACTIVE_PAGE_SLOT_COUNT = 9
+		SUPPORT_PAGE_SLOT_COUNT = 18
 	else:
 		ACTIVE_PAGE_SLOT_COUNT = 8	
+		SUPPORT_PAGE_SLOT_COUNT = 12
 		
 #Search
 
