@@ -7,3 +7,6 @@
 182	SHAMAN	Escudo etéreo	Escudo etéreo fuerte	Escudo etéreo férreo	Protege a miembros del grupo del daño durante 12 segundos.	Aplicable a miembros del grupo que estén cerca	Evita daño			STANDING_SKILL|CAN_USE_FOR_ME|NEED_TARGET|ONLY_FOR_ALLIANCE		cheonun	24	4			Duración de escudo %.0f	4*k		Probabilidad de protección %.0f %%	0.4*k+(18*k)		
 183	WOLFMAN	Golpe de garra	Golpe de garra fuerte	Golpe de garra arrasador	Ataque giratorio rápido hacia delante	Efecto en área frontal	Bonificación de precisión			ATTACK_SKILL|NEED_TARGET|WEAPON_LIMITATION	CLAW	ilipungu	9	4			Valor de ataque +%.0f-%.0f	(1.8*minatk+(minatk+dex*6+minmwep+1+str*3+lv)*SkillPoint)	(1.8*maxatk+(maxatk+dex*6+maxmwep+1+str*3+lv)*SkillPoint)	Bonificación de precisión %.0f %%	0.4*k+(32*k/2)		
 246	SUPPORT	Precisión			Aumenta la precisión					PASSIVE		hit_attribute					Bonificación de precisión: +%.0f	0.4*k+(32*k/2)
+132	SUPPORT	Atacar automáticamente			Ataca a un enemigo marcado.					CANNOT_LEVEL_UP|TOGGLE		autoattack										
+133	SUPPORT	Carisma			Dirige una parte de las bonificaciones por liderazgo hacia el líder.					PASSIVE		role_proficiency											
+134	SUPPORT	Inspiración			Incrementa tu bonificación de liderazgo cuando el líder te asigna un papel.					PASSIVE		insight											
