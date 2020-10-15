@@ -2,7 +2,7 @@
 		void				StopMuyeongEvent();
 //add after
 #ifdef ENABLE_CONQUEROR_LEVEL
-		void				StartCheonunEvent();
+		void				StartCheonunEvent(long lApplyValue);
 		void				StopCheonunEvent();
 #endif
 
