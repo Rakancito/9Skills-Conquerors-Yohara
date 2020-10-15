@@ -61,44 +61,53 @@ void CHARACTER::StopMuyeongEvent()
 }
 //add after
 #ifdef ENABLE_CONQUEROR_LEVEL
+
+EVENTINFO(cheonun_event_info)
+{
+    DynamicCharacterPtr ch;
+    long lApplyCheonun;
+};
+
 EVENTFUNC(skill_cheonun_event)
 {
-	char_event_info* info = dynamic_cast<char_event_info*>( event->info );
+    cheonun_event_info* info = dynamic_cast<cheonun_event_info*>(event->info);
 
-	if ( info == NULL )
-	{
-		sys_err( "skill_cheonun_event> <Factor> Null pointer" );
-		return 0;
-	}
+    if (info == NULL)
+    {
+        sys_err("skill_cheonun_event> <Factor> Null pointer");
+        return 0;
+    }
 
-	LPCHARACTER	ch = info->ch;
+    LPCHARACTER ch = info->ch;
+    long lValue = info->lApplyCheonun;
 
-	if (ch == NULL) { // <Factor>
-		return 0;
-	}
+    if (ch == NULL || lValue == NULL)
+        return 0;
 
-	if (!ch->IsAffectFlag(AFF_CHEONUN))
-	{
-		ch->StopCheonunEvent();
-		return 0;
-	}
-	int dwPercent = number(1, 100);
-	if (dwPercent <= (int)(ch->GetPoint(POINT_INVINCIBLE)))
-		ch->AddAffect(2000, POINT_NONE, 0, AFF_CHUNWOON_MOOJUK, 5, 0, true);
-	
-	return PASSES_PER_SEC(12);
+    if (!ch->IsAffectFlag(AFF_CHEONUN))
+    {
+        ch->StopCheonunEvent();
+        return 0;
+    }
+
+    long lPercent = number(1, 100);
+    if (lPercent <= lValue)
+        ch->AddAffect(2000, POINT_NONE, 0, AFF_CHUNWOON_MOOJUK, lValue, 0, true);
+
+    return PASSES_PER_SEC(12);
 }
 
-void CHARACTER::StartCheonunEvent()
+void CHARACTER::StartCheonunEvent(long lApplyValue)
 {
-	if (m_pkCheonunEvent)
-		return;
+    if (m_pkCheonunEvent)
+        return;
 
-	char_event_info* info = AllocEventInfo<char_event_info>();
+    cheonun_event_info* info = AllocEventInfo<cheonun_event_info>();
 
-	info->ch = this;
+    info->ch = this;
+    info->lApplyCheonun = lApplyValue;
 
-	m_pkCheonunEvent = event_create(skill_cheonun_event, info, PASSES_PER_SEC(1));
+    m_pkCheonunEvent = event_create(skill_cheonun_event, info, PASSES_PER_SEC(1));
 }
 
 void CHARACTER::StopCheonunEvent()
