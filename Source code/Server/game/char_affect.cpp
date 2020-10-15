@@ -19,22 +19,13 @@
 	
 //add after
 #ifdef ENABLE_CONQUEROR_LEVEL
-	if (pkAff->dwType == SKILL_CHEONUN)
-	{
-		if (bAdd)
-			StartCheonunEvent();
-		else
-			StopCheonunEvent();
-	}
-#endif
-#ifdef ENABLE_NEW_GYEONGGONG_SKILL
-	if (pkAff->dwType == SKILL_GYEONGGONG)
-	{
-		if (bAdd)
-			StartGyeongGongEvent();
-		else
-			StopGyeongGongEvent();
-	}
+    	if (pkAff->dwType == SKILL_CHEONUN)
+    	{
+        	if (bAdd)
+            		StartCheonunEvent(pkAff->lApplyValue);
+        	else
+            		StopCheonunEvent();
+    	}
 #endif
 
 //Search
