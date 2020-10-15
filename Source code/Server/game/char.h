@@ -1,18 +1,4 @@
 //Search
-
-};
-
-enum EPKModes
-
-// add before
-
-#ifdef ENABLE_CONQUEROR_LEVEL
-	POINT_INVINCIBLE,
-#endif
-};
-
-		
-//Search
 		void				StopMuyeongEvent();
 //add after
 #ifdef ENABLE_CONQUEROR_LEVEL
