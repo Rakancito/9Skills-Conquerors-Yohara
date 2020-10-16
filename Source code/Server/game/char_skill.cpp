@@ -31,7 +31,7 @@ if (GetSkillMasterType(dwSkillVnum) != SKILL_MASTER)
 #ifdef ENABLE_WOLFMAN_CHARACTER
 			if (GetSkillMasterType(pkSk->dwVnum) != SKILL_MASTER && (pkSk->dwVnum<= SKILL_FINISH | pkSk->dwVnum>= SKILL_ILIPUNGU))
 #else
-			if (GetSkillMasterType(pkSk->dwVnum) != SKILL_MASTER && (pkSk->dwVnum<= SKILL_FINISH | pkSk->dwVnum>= SKILL_ILIPUNGU))
+			if (GetSkillMasterType(pkSk->dwVnum) != SKILL_MASTER && (pkSk->dwVnum<= SKILL_FINISH | pkSk->dwVnum>= SKILL_CHEONUN))
 #endif
 #else
 			if (GetSkillMasterType(pkSk->dwVnum) != SKILL_MASTER)
